@@ -1,0 +1,445 @@
+WEBVTT
+
+1
+00:00:01.030 --> 00:00:04.370
+Let's now look at handling audio sound,
+in a web page.
+
+2
+00:00:05.750 --> 00:00:07.260
+That's the whole target of this video.
+
+3
+00:00:07.260 --> 00:00:09.180
+It's just about sound.
+
+4
+00:00:09.180 --> 00:00:13.330
+We need to use the audio element and
+several attributes.
+
+5
+00:00:14.450 --> 00:00:17.060
+So, how can we get sound into a web page?
+
+6
+00:00:17.060 --> 00:00:19.630
+Well basically, audio, and then src, and
+
+7
+00:00:19.630 --> 00:00:22.960
+then the name of the file,
+and then /audio.
+
+8
+00:00:22.960 --> 00:00:26.230
+Okay that's it, that will bring
+in a sound into the web page.
+
+9
+00:00:27.400 --> 00:00:28.671
+What's the problem with this example?
+
+10
+00:00:28.671 --> 00:00:30.629
+Well you can't hear anything.
+
+11
+00:00:30.629 --> 00:00:32.837
+It'll bring a sound into the web page.
+
+12
+00:00:32.837 --> 00:00:35.860
+It's in memory, but it won't play it.
+
+13
+00:00:35.860 --> 00:00:37.130
+So how do we play it?
+
+14
+00:00:37.130 --> 00:00:39.090
+All right,
+we have to add a little bit more.
+
+15
+00:00:39.090 --> 00:00:41.660
+We have to add another attribute,
+autoplay.
+
+16
+00:00:42.850 --> 00:00:47.090
+So as soon as the web page loads,
+it will load the sound file and
+
+17
+00:00:47.090 --> 00:00:48.958
+then it will play the sound
+file straight away.
+
+18
+00:00:50.000 --> 00:00:52.213
+So let's check that by running
+this example over here.
+
+19
+00:00:54.962 --> 00:01:01.004
+[MUSIC]
+
+20
+00:01:01.004 --> 00:01:01.671
+Works fine.
+
+21
+00:01:01.671 --> 00:01:04.588
+[MUSIC]
+
+22
+00:01:04.588 --> 00:01:06.546
+Okay, I'll stop it now and
+then we'll carry on.
+
+23
+00:01:06.546 --> 00:01:08.461
+[MUSIC]
+
+24
+00:01:08.461 --> 00:01:10.004
+Okay, so.
+
+25
+00:01:12.796 --> 00:01:15.160
+Oops, let's forget this little thing here.
+
+26
+00:01:15.160 --> 00:01:17.110
+So, basically that was the autoplay.
+
+27
+00:01:17.110 --> 00:01:20.090
+Basically we told the browser,
+bring in a sound file and
+
+28
+00:01:20.090 --> 00:01:23.860
+then immediately start playing it as
+soon as the sound file has loaded.
+
+29
+00:01:25.620 --> 00:01:26.586
+All right, what else could we do?
+
+30
+00:01:26.586 --> 00:01:30.930
+Well, I have no control
+over the sound file so far.
+
+31
+00:01:30.930 --> 00:01:33.062
+I can't restart it or anything like that.
+
+32
+00:01:33.062 --> 00:01:37.687
+No problem, all the modern
+browsers have audio controls.
+
+33
+00:01:37.687 --> 00:01:39.707
+All right, so that's another attribute.
+
+34
+00:01:39.707 --> 00:01:41.035
+Bring in the sound file.
+
+35
+00:01:41.035 --> 00:01:45.835
+Show the user some controls so
+they can play and rewind and
+
+36
+00:01:45.835 --> 00:01:48.672
+fast forward and change volume, the sound.
+
+37
+00:01:48.672 --> 00:01:52.254
+Okay, so that example is here,
+it should work if I try it right here.
+
+38
+00:01:54.254 --> 00:01:55.880
+[MUSIC]
+
+39
+00:01:55.880 --> 00:01:58.100
+Yep no problem at all.
+
+40
+00:01:58.100 --> 00:02:00.830
+This is provided by the browser okay?
+
+41
+00:02:00.830 --> 00:02:02.930
+That is the controls.
+
+42
+00:02:02.930 --> 00:02:09.640
+I could jump around, jump to the end,
+change the volume, all of those things.
+
+43
+00:02:09.640 --> 00:02:14.900
+Simple stuff, but I'm just gonna stop it
+right now and move on to the next example.
+
+44
+00:02:16.430 --> 00:02:17.671
+Okay what else can we do?
+
+45
+00:02:17.671 --> 00:02:19.504
+We can loop things.
+
+46
+00:02:19.504 --> 00:02:21.310
+Okay we can loop things.
+
+47
+00:02:21.310 --> 00:02:22.560
+Why is that useful?
+
+48
+00:02:22.560 --> 00:02:26.650
+For example, maybe you have a game and
+it's got some background music.
+
+49
+00:02:26.650 --> 00:02:30.120
+And you only have two minutes
+of your background music.
+
+50
+00:02:30.120 --> 00:02:32.160
+But the game goes on for ten minutes.
+
+51
+00:02:32.160 --> 00:02:36.060
+Okay.
+Then you have your game system like this.
+
+52
+00:02:36.060 --> 00:02:40.020
+You say start the system,
+start the audio and keep looping it.
+
+53
+00:02:40.020 --> 00:02:42.000
+Every two minutes it will start it again,
+
+54
+00:02:42.000 --> 00:02:45.760
+again, again,
+if the sound is two minutes long, okay?
+
+55
+00:02:45.760 --> 00:02:46.880
+So keep repeating.
+
+56
+00:02:46.880 --> 00:02:48.296
+Might be useful.
+
+57
+00:02:48.296 --> 00:02:49.711
+We have a simple example here.
+
+58
+00:02:51.921 --> 00:02:54.462
+[MUSIC]
+
+59
+00:02:54.462 --> 00:02:55.129
+Loop.
+
+60
+00:02:55.129 --> 00:02:57.003
+[MUSIC]
+
+61
+00:02:57.003 --> 00:03:03.922
+Loop, and its gonna loop and loop and
+loop for infinity until I stop it.
+
+62
+00:03:03.922 --> 00:03:05.712
+[MUSIC]
+
+63
+00:03:05.712 --> 00:03:09.400
+All right, that was simply
+the loop attribute right there.
+
+64
+00:03:10.580 --> 00:03:11.990
+Full screen okay let's carry on.
+
+65
+00:03:13.340 --> 00:03:15.005
+What about older browsers?
+
+66
+00:03:15.005 --> 00:03:17.260
+Cuz those kind of things
+we just looked at,
+
+67
+00:03:17.260 --> 00:03:20.340
+they were really for most recent browsers.
+
+68
+00:03:20.340 --> 00:03:25.070
+And sometimes some people don't
+quite have the most recent browsers.
+
+69
+00:03:25.070 --> 00:03:29.010
+Maybe they're using a mobile phone
+which is a few years out of date.
+
+70
+00:03:29.010 --> 00:03:31.800
+It cannot be updated, things like that.
+
+71
+00:03:31.800 --> 00:03:35.450
+So, It's wise to do some
+things kind of specially.
+
+72
+00:03:35.450 --> 00:03:39.670
+One sensible approach is
+to use MP3 format sound.
+
+73
+00:03:39.670 --> 00:03:42.330
+It's supposed to work in all browsers.
+
+74
+00:03:42.330 --> 00:03:46.080
+It works pretty good on PCs and
+Macs but in the mobile environment,
+
+75
+00:03:46.080 --> 00:03:48.780
+it does cause some problems still.
+
+76
+00:03:48.780 --> 00:03:52.219
+But still, that is a good target
+to start with, MP3 format.
+
+77
+00:03:54.170 --> 00:03:59.920
+And how can you handle these older
+browsers a bit more professionally?
+
+78
+00:03:59.920 --> 00:04:03.060
+So for example,
+instead of it just not working,
+
+79
+00:04:03.060 --> 00:04:07.960
+you can actually get those older browsers
+to actually show a little message.
+
+80
+00:04:07.960 --> 00:04:10.430
+And the way you do it is like this.
+
+81
+00:04:10.430 --> 00:04:15.380
+This could be sound or audio,
+it could be actually any HTML tag.
+
+82
+00:04:15.380 --> 00:04:20.420
+So you have this tag, whatever the tag
+is that you're trying to get working.
+
+83
+00:04:20.420 --> 00:04:24.120
+But you know it won't work
+on some older systems.
+
+84
+00:04:24.120 --> 00:04:28.980
+So you write the name of the tag and
+that will work for the newer systems.
+
+85
+00:04:28.980 --> 00:04:33.540
+For the older systems, they will ignore
+that tag because they don't understand it,
+
+86
+00:04:33.540 --> 00:04:35.290
+because they're like
+three years out of date.
+
+87
+00:04:35.290 --> 00:04:38.088
+So they ignore this and they ignore this.
+
+88
+00:04:38.088 --> 00:04:42.520
+But they do pick up a simple
+paragraph in the middle.
+
+89
+00:04:42.520 --> 00:04:45.050
+So older browsers, not very good browsers,
+
+90
+00:04:45.050 --> 00:04:47.990
+not very complete,
+they'll pick up the middle.
+
+91
+00:04:47.990 --> 00:04:51.060
+But the newer browsers
+will ignore the middle and
+
+92
+00:04:51.060 --> 00:04:53.990
+they'll just use the start and end.
+
+93
+00:04:53.990 --> 00:04:56.730
+So, that's how you handle older browsers.
+
+94
+00:04:56.730 --> 00:05:00.660
+Nothing to do with sound by itself,
+but actually it's a general method.
+
+95
+00:05:02.220 --> 00:05:03.810
+All right, let's move on.
+
+96
+00:05:03.810 --> 00:05:04.650
+There's an example.
+
+97
+00:05:04.650 --> 00:05:08.490
+So there's sound, and then for
+older browsers, or not very good browsers,
+
+98
+00:05:08.490 --> 00:05:11.110
+not very complete browsers,
+there's a message.
+
+99
+00:05:11.110 --> 00:05:13.461
+That message will not be
+shown in the newer browsers.

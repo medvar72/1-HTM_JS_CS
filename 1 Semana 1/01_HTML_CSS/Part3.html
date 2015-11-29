@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+    fieldset {
+      width: 720px;
+      background: lightyellow;
+      border: 10px solid yellow;
+      margin-bottom: 10px;
+    }
+    label {
+      width: 180px;
+      display: inline-block;
+      text-align: right;
+      vertical-align: top;
+    }
+    label:hover { font-size:30px }
+    input:hover { font-size:30px }
+    textarea{
+       width:360px;
+       height:50px;
+    }
+    span {
+      font-size: small;
+      text-align: center;
+      width: 30px;
+      height: 20px;
+      display: inline-block;
+    }
+    .checkboxkstyle {
+      width: auto;
+    }
+    #txtred {
+      color: white;
+      background: red;
+    }
+
+    #txtpurple {
+      color: white;
+      background: purple;
+    }
+    .thumb {
+          height: 75px;
+          border: 1px solid #000;
+          margin: 10px 5px 0 0;
+          }
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>My first homeWork</title>
+  </head>
+  <body>
+    <h1>Please Enter Your Details For Our Dating Website!</h1>
+
+    <form method="post" enctype="multipart/form-data"
+          action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php">
+    <fieldset>
+      <legend>Your Face </legend>
+        <label for = "fileToUpload"> Your image: </label>
+        <input type="file" name="fileToUpload" id="fileToUpload" required = "required"></br>
+        <label for for="preview"> Image Preview </label>
+        <img class="thumb" id="preview" height="15%">
+    </fieldset><br>
+    <script>
+      //for(var i=1; i<=3; i++) {
+        //alert("Rabbit "+i+" out of the hat!")
+      //}
+      document.getElementById('fileToUpload').onchange = function(evt){
+        var tgt = evt.target || window.event.srcElement,
+        files = tgt.files;
+
+    // FileReader support
+    if (FileReader && files && files.length) {
+        var fr = new FileReader();
+        fr.onload = function () {
+            document.getElementById('preview').src = fr.result;
+        }
+        fr.readAsDataURL(files[0]);
+    }
+
+    // Not supported
+    else {
+        // fallback -- perhaps submit the input to an iframe and temporarily store
+        // them on the server until the user's session ends.
+    }
+      }
+    </script>
+
+    <fieldset>
+      <legend> Your general details </legend>
+      <label for="name"> Name: </label>
+      <input type="text" name="name" required = "required"></br>
+      <label class="checkboxkstyle"  for="gender"> Gender: </label>
+      <input type="radio" name="gender" value="male" required="required">Male
+      <input type="radio" name="gender" value="female">Female</br>
+      <label for="age"> Age: </label>
+      <input type="number" min="0" max="99" step="1" value="42" name="age" required="required"></br>
+      <label for "dateofbirth"> Date of Birth: </label>
+      <input type="date" name="dateofbirth"></br>
+      <label for="color"> Favorite Color: </label>
+      <input type="color" name="color"> <br>
+      <label for="country"> Which Country: </label>
+      <select name="country">
+        <option value="JP"> Japan </option>
+        <option value="CR"> Costa Rica </option>
+        <option value="CO"> Colombia </option>
+        <option value="EC"> Ecuador </option>
+        <option value="VE"> Venezuela </option>
+        <option value="NS"> No Selection </option>
+      </select></br>
+    </fieldset></br>
+
+    <fieldset>
+      <legend> Your indicators </legend>
+      <label for="height"> Height: </label>
+       <span id = "txtred">Short</span><input type="range" name="height" min="0" max="100" value="50"><span id = "txtpurple">Tall</span></br>
+      <label for="salary"> Salary: </label>
+      <span id = "txtred">Poor</span><input type="range" name="salary" min="0" max="100" value="50"><span id = "txtpurple">Rich</span>
+    </fieldset></br>
+
+    <fieldset>
+      <legend> Your Contact Information </legend>
+      <label for="email"> Email: </label>
+      <input type="email" name="email" required = "required"></br>
+      <label for="telephono"> Mobile: </label>
+      <input type="tel" name="telephono" ></br>
+      <label for="address"> Address: </label>
+      <textarea cols="30" rows="3" name="address">
+        Please enter your address here
+      </textarea></br>
+      <label class="checkboxkstyle" for="contact"> Method to Contact you: </label>
+      <input type="checkbox" name="contact" value="email">Email
+      <input type="checkbox" name="contact" value="whatsapp">WhatsApp
+      <input type="checkbox" name="contact" value="inapp">In-app chat
+    </fieldset></br>
+    <br>
+    <input type="submit" value="Submit">
+  </body>
+</html>

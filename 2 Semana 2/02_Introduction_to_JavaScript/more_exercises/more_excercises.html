@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<style>
+  div {
+    width: 720px;
+    background: lightyellow;
+    border: 10px solid yellow;
+    margin-bottom: 10px;
+  }
+  </style>
+
+  <script>
+  function myrandom(n){
+    var rnd
+    rnd = Math.random() * (n + 1);
+    return Math.floor(rnd);
+  }
+
+  function do_myrandom(){
+    var guess_input = prompt("Hello guest. Please enter a number " );
+    var number_random = myrandom(guess_input);
+    alert("The random number is :" + number_random);
+    }
+  </script>
+  <title> More JavaScript Exercises</title>
+
+</head>
+<body ID = "myBody" onload="do_myrandom()">
+  <h1> More Javascript exercises  </h1>
+  <p> This page consists of additional javascript exercises that you may find to be helpful. The exercises were originally created by Paul Bucci </p>
+  <div id = "Problem_1">
+    <p>Problem: Write a function that returns a random number in range 0-n</p>
+
+  </div>
+</body>
+</html>

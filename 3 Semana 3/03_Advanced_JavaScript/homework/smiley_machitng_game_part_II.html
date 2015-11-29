@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <style>
+  #rightSide { left: 500px;
+               border-left: 2px solid black }
+   img {
+     position:absolute;
+   }
+   h1 {
+     text-align: center;
+   }
+   P {
+     text-align: center;
+   }
+
+   div {
+     position:absolute;
+     width:500px;
+     height:500px;
+     position:absolute;
+   }
+  </style>
+    <script type="text/javascript">
+      var numberOfFaces = 5;
+      var image_height = 100;
+      var image_width = 100;
+      var div_height = 500;
+      var div_width = 500;
+
+
+      window.onload = function generateFaces(){
+
+        for (var i = 0; i < 5; i++) {
+          var theLeftSide = document.getElementById("leftSide");
+          var theRightSide = document.getElementById("rightSide");
+          var imgTop = Math.floor(Math.random() * ((div_height - image_height) + 1));
+          var img_left = Math.floor(Math.random() * ((div_width - image_width) + 1));
+          var newImag = document.createElement("img");
+          newImag.src = ("http://home.cse.ust.hk/~rossiter/mooc/matching_game/smile.png");
+          newImag.style.left = img_left + "px";
+          newImag.style.top = imgTop + "px";
+          theLeftSide.appendChild(newImag);
+          //alert ("imgTop: " + imgTop + " img_left:" + img_left);
+
+        }
+      }
+
+
+    </script>
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Matching Game Part II</title>
+
+  </head>
+  <body>
+    <h1>Matching Game Part II</h1>
+    <p>
+      Click on the extra smiling face on the left.
+    </p>
+
+    <p>
+      Part 2 – generating the left side images
+    </p>
+
+    <div id="leftSide"></div>
+
+    <div id="rightSide"></div>
+
+
+
+  </body>
+</html>
