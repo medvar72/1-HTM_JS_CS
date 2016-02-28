@@ -1,0 +1,844 @@
+WEBVTT
+
+1
+00:00:01.730 --> 00:00:04.400
+Let's have a look at
+Timer Events in JavaScript.
+
+2
+00:00:04.400 --> 00:00:06.230
+That's what we're gonna focus on.
+
+3
+00:00:07.450 --> 00:00:09.740
+So these are the commands
+we're gonna look at.
+
+4
+00:00:11.770 --> 00:00:18.290
+In general, the idea is simple, it's doing
+something later, possibly many times.
+
+5
+00:00:18.290 --> 00:00:20.200
+That's the general idea.
+
+6
+00:00:20.200 --> 00:00:22.110
+So we call that timers.
+
+7
+00:00:22.110 --> 00:00:25.040
+Very, very useful for
+dynamic web page behavior.
+
+8
+00:00:26.280 --> 00:00:29.060
+So how do we construct
+a timer in JavaScript?
+
+9
+00:00:29.060 --> 00:00:36.330
+We make a variable and then we use
+the variable to point to a timer.
+
+10
+00:00:36.330 --> 00:00:36.970
+All right.
+
+11
+00:00:36.970 --> 00:00:41.590
+We just set up a timer, and
+then that timer is going to run
+
+12
+00:00:41.590 --> 00:00:46.280
+some JavaScript code,
+such as a function, a little bit later.
+
+13
+00:00:47.320 --> 00:00:52.780
+So this part here is setting
+up something to happen later.
+
+14
+00:00:52.780 --> 00:00:54.040
+What's gonna happen?
+
+15
+00:00:54.040 --> 00:00:56.660
+This function is gonna be executed.
+
+16
+00:00:56.660 --> 00:00:58.000
+When is it gonna happen?
+
+17
+00:00:58.000 --> 00:01:01.610
+It's gonna happen 1,000 later.
+
+18
+00:01:01.610 --> 00:01:05.849
+Now that is a value in a milliseconds,
+so it is actually 1 second,
+
+19
+00:01:05.849 --> 00:01:08.120
+1,000 is 1 second.
+
+20
+00:01:08.120 --> 00:01:11.529
+So one second later this
+function will be executed.
+
+21
+00:01:12.770 --> 00:01:14.670
+Now when it does this, it doesn't wait.
+
+22
+00:01:14.670 --> 00:01:17.620
+You can do other things with
+your JavaScript code, many,
+
+23
+00:01:17.620 --> 00:01:19.010
+many different things.
+
+24
+00:01:19.010 --> 00:01:23.220
+And then suddenly, one second later,
+that code will be executed.
+
+25
+00:01:24.300 --> 00:01:28.810
+So that's the idea, doing something
+a little bit later in time.
+
+26
+00:01:30.320 --> 00:01:32.590
+So here's an example,
+let's run this example.
+
+27
+00:01:32.590 --> 00:01:35.070
+Here it is, how long do you want to sleep?
+
+28
+00:01:35.070 --> 00:01:38.990
+All right, so we can type in
+a value such as perhaps 8,000.
+
+29
+00:01:38.990 --> 00:01:42.800
+Something like that, and then press OK.
+
+30
+00:01:42.800 --> 00:01:48.390
+And remember, we're gonna use that
+value to set the delay for a timer.
+
+31
+00:01:48.390 --> 00:01:51.480
+So we do OK, nothing happens.
+
+32
+00:01:51.480 --> 00:01:53.360
+Don't see anything happening.
+
+33
+00:01:53.360 --> 00:01:58.910
+But we have set up a timer, and eight
+seconds later, boom, up comes a message.
+
+34
+00:01:58.910 --> 00:02:01.090
+Wake up, wake up, wake up, wake up.
+
+35
+00:02:01.090 --> 00:02:02.380
+It's a silly example, but
+
+36
+00:02:02.380 --> 00:02:07.390
+it just shows the idea of a delay before
+that JavaScript function is executed.
+
+37
+00:02:08.420 --> 00:02:10.950
+Okay, let's go back to our presentation.
+
+38
+00:02:10.950 --> 00:02:14.260
+So that was simple to
+let's have a look at that.
+
+39
+00:02:14.260 --> 00:02:17.790
+There's our web page, when we loaded
+our webpage we ran some code,
+
+40
+00:02:17.790 --> 00:02:19.120
+what does the code do?
+
+41
+00:02:19.120 --> 00:02:21.900
+It sets things up, all right.
+
+42
+00:02:21.900 --> 00:02:25.850
+Functions can have any name this
+is just a kinda silly name.
+
+43
+00:02:25.850 --> 00:02:27.180
+And so what does that do?
+
+44
+00:02:27.180 --> 00:02:30.850
+Well it shows the question,
+how long do you want to sleep?
+
+45
+00:02:30.850 --> 00:02:34.160
+And then we put whatever
+that person types.
+
+46
+00:02:34.160 --> 00:02:36.430
+We're using prompt, so
+they can type something.
+
+47
+00:02:36.430 --> 00:02:39.220
+Whatever they type gets
+stored in a variable.
+
+48
+00:02:39.220 --> 00:02:43.460
+And then we use that variable for
+the duration of a timer.
+
+49
+00:02:43.460 --> 00:02:47.220
+In other words,
+we say after that many milliseconds,
+
+50
+00:02:47.220 --> 00:02:49.530
+we're gonna run this function here.
+
+51
+00:02:50.570 --> 00:02:51.620
+Where is this function?
+
+52
+00:02:51.620 --> 00:02:52.960
+This function is down here.
+
+53
+00:02:52.960 --> 00:02:56.080
+Very simple,
+it just makes a little window, "WAKE UP!
+
+54
+00:02:56.080 --> 00:02:58.690
+WAKE UP!
+WAKE UP!!", very simple little example.
+
+55
+00:02:58.690 --> 00:03:01.930
+There's the key part where we do a delay,
+and
+
+56
+00:03:01.930 --> 00:03:05.780
+we run that function after the number
+which is entered by the user.
+
+57
+00:03:07.200 --> 00:03:08.070
+Right, let's carry on.
+
+58
+00:03:09.350 --> 00:03:12.360
+Let's do a kind of more advanced example,
+if you like.
+
+59
+00:03:12.360 --> 00:03:14.210
+Now, let's show this one first.
+
+60
+00:03:14.210 --> 00:03:15.760
+So, here's the example.
+
+61
+00:03:15.760 --> 00:03:18.060
+As you can see, there is a picture.
+
+62
+00:03:18.060 --> 00:03:20.370
+That picture is moving over to the right.
+
+63
+00:03:21.560 --> 00:03:22.980
+How do we control the speed?
+
+64
+00:03:22.980 --> 00:03:24.830
+Well, that's controlled with a timer.
+
+65
+00:03:26.440 --> 00:03:29.750
+So, let's have a look at the code,
+which makes this work.
+
+66
+00:03:29.750 --> 00:03:32.790
+So, when we load that web page,
+what do we see?
+
+67
+00:03:32.790 --> 00:03:34.470
+Well, there's our web page.
+
+68
+00:03:34.470 --> 00:03:37.440
+And we see basically a picture, an image.
+
+69
+00:03:37.440 --> 00:03:40.110
+That is the image of the stones.
+
+70
+00:03:40.110 --> 00:03:45.870
+And we apply some style rules so that our
+JavaScript code can move the position.
+
+71
+00:03:45.870 --> 00:03:50.670
+Used by adding position absolute and
+reset the left position.
+
+72
+00:03:50.670 --> 00:03:53.320
+That's the one that we change
+with out JavaScript code.
+
+73
+00:03:53.320 --> 00:03:55.640
+So that sets things up.
+
+74
+00:03:55.640 --> 00:04:01.410
+When the web page is loaded, start
+the timer and it runs this function here.
+
+75
+00:04:01.410 --> 00:04:02.040
+What does it do?
+
+76
+00:04:02.040 --> 00:04:06.260
+It finds in memory, it finds that picture.
+
+77
+00:04:06.260 --> 00:04:09.010
+Both the stones using get element by ID.
+
+78
+00:04:10.200 --> 00:04:15.030
+And then it updates a variable which
+is storing the X position of the image.
+
+79
+00:04:16.030 --> 00:04:17.190
+There's the variable here.
+
+80
+00:04:17.190 --> 00:04:21.900
+Start with the value zero and
+then every time this function is executed
+
+81
+00:04:21.900 --> 00:04:25.160
+we increase it by one and
+what do we do with that?
+
+82
+00:04:25.160 --> 00:04:28.520
+Well, we use that variable,
+x position, we use it and
+
+83
+00:04:28.520 --> 00:04:32.460
+we put it in the left property, right?
+
+84
+00:04:32.460 --> 00:04:36.760
+The left attribute, in other words,
+the x position of the image.
+
+85
+00:04:36.760 --> 00:04:40.700
+We find the image and
+then we change the style dot left,
+
+86
+00:04:40.700 --> 00:04:46.430
+the x position of the image, so
+that will update it at the new position,
+
+87
+00:04:46.430 --> 00:04:48.550
+which is moved a little
+bit over to the right.
+
+88
+00:04:49.740 --> 00:04:52.730
+Now, what do we finally,
+down here, the last line of code?
+
+89
+00:04:52.730 --> 00:04:58.980
+Well, we set up a timer, and
+that timer is for the next time.
+
+90
+00:04:58.980 --> 00:05:02.820
+Because we want to
+continually move that image.
+
+91
+00:05:02.820 --> 00:05:07.000
+We set up a timer,
+after a very small piece of time,
+
+92
+00:05:07.000 --> 00:05:09.900
+one 20th of a second I think.
+
+93
+00:05:09.900 --> 00:05:15.930
+After one 20th of a second,
+it will run the same function again.
+
+94
+00:05:15.930 --> 00:05:16.920
+Right, set timer.
+
+95
+00:05:16.920 --> 00:05:18.860
+This is inside set timer.
+
+96
+00:05:18.860 --> 00:05:22.590
+It is running the same function again,
+a little bit later.
+
+97
+00:05:23.670 --> 00:05:26.690
+All right, so a little bit later,
+run this function again, and
+
+98
+00:05:26.690 --> 00:05:28.680
+then it will increase the x.
+
+99
+00:05:28.680 --> 00:05:33.880
+It will update the x_position of
+the image, and it will run itself again,
+
+100
+00:05:33.880 --> 00:05:39.010
+increase x, update position, again, again,
+and we have a special kind of timer loop.
+
+101
+00:05:40.660 --> 00:05:42.800
+So, that's what we saw when
+we just run the example.
+
+102
+00:05:44.120 --> 00:05:46.850
+Okay.
+So let's say you wanna stop
+
+103
+00:05:46.850 --> 00:05:52.110
+that movement because that movement
+goes on forever unless you stop it.
+
+104
+00:05:52.110 --> 00:05:53.970
+Maybe you wanna stop that movement.
+
+105
+00:05:53.970 --> 00:05:55.630
+Stop a timer.
+
+106
+00:05:55.630 --> 00:05:58.890
+Well if you've started a timer
+in the way that we showed.
+
+107
+00:05:58.890 --> 00:06:05.580
+You start a timeout and you just give
+it a name to point to that timeout.
+
+108
+00:06:05.580 --> 00:06:08.560
+If you do that, then all you have
+to do to stop that movement or
+
+109
+00:06:08.560 --> 00:06:13.350
+whatever you're doing you just say
+clear timeout and then you use the name
+
+110
+00:06:13.350 --> 00:06:17.190
+that you used when you made
+the timer in the first place, okay?
+
+111
+00:06:17.190 --> 00:06:21.350
+So we used the word timer, so we use the
+word timer here and that will immediately
+
+112
+00:06:21.350 --> 00:06:27.690
+stop that loop process, it will stop the
+timer Here's an example where we do that.
+
+113
+00:06:27.690 --> 00:06:30.220
+We add a button to stop that.
+
+114
+00:06:30.220 --> 00:06:31.070
+So, let's have a look.
+
+115
+00:06:31.070 --> 00:06:33.000
+Okay.
+So, here is this example.
+
+116
+00:06:33.000 --> 00:06:36.770
+And you can see it's the same as before,
+picture moving to the right hand side.
+
+117
+00:06:36.770 --> 00:06:39.120
+But I just added a button here and
+
+118
+00:06:39.120 --> 00:06:43.640
+that button, when I click on it,
+it triggers an event and we run some code.
+
+119
+00:06:43.640 --> 00:06:44.580
+So, let's do it.
+
+120
+00:06:44.580 --> 00:06:45.900
+Let's press stop.
+
+121
+00:06:45.900 --> 00:06:49.430
+And now you can see, yeah,
+the picture is not moving anymore.
+
+122
+00:06:49.430 --> 00:06:53.230
+I have in effect stopped the time
+of process, I've stopped the timer.
+
+123
+00:06:54.840 --> 00:06:56.550
+Let's carry on with the presentation.
+
+124
+00:06:56.550 --> 00:06:59.190
+So here's our code and, as I said,
+
+125
+00:06:59.190 --> 00:07:02.750
+as we saw just now,
+we've added a button, simple button.
+
+126
+00:07:02.750 --> 00:07:05.490
+Click on the button,
+then it runs some code.
+
+127
+00:07:05.490 --> 00:07:07.070
+What does the code do?
+
+128
+00:07:07.070 --> 00:07:09.400
+It clears the timer.
+
+129
+00:07:09.400 --> 00:07:11.960
+And where do we get this ting from,
+the_timer?
+
+130
+00:07:11.960 --> 00:07:14.280
+Well, that was the one that we used,
+
+131
+00:07:14.280 --> 00:07:18.850
+the variable name that we
+used when we made the_timer.
+
+132
+00:07:18.850 --> 00:07:22.960
+So, as long as we use the same name,
+then we can clearTimeout,
+
+133
+00:07:22.960 --> 00:07:24.750
+clear this particular timer.
+
+134
+00:07:24.750 --> 00:07:27.850
+Because you can have as many timers
+as you'd like at the same time.
+
+135
+00:07:29.170 --> 00:07:31.530
+So that's adding a clear of the timer.
+
+136
+00:07:32.660 --> 00:07:33.170
+Let's carry on.
+
+137
+00:07:34.180 --> 00:07:35.200
+What else could we do?
+
+138
+00:07:35.200 --> 00:07:37.070
+Well, that works fine.
+
+139
+00:07:37.070 --> 00:07:38.200
+It's totally okay.
+
+140
+00:07:38.200 --> 00:07:40.250
+There is another alternative.
+
+141
+00:07:40.250 --> 00:07:44.080
+setInterval, and it's very, very similar.
+
+142
+00:07:44.080 --> 00:07:44.870
+How do we set it up?
+
+143
+00:07:44.870 --> 00:07:46.720
+Well, we just do setInterval.
+
+144
+00:07:46.720 --> 00:07:49.920
+That's different to setTimeout,
+setInterval.
+
+145
+00:07:49.920 --> 00:07:52.580
+We run this code, and we've got a number.
+
+146
+00:07:52.580 --> 00:07:55.910
+So far,
+it looks identical to set time out, but
+
+147
+00:07:55.910 --> 00:08:01.580
+the difference is after you've done this,
+every 2 seconds, it will run this code.
+
+148
+00:08:01.580 --> 00:08:02.990
+Every 2 seconds.
+
+149
+00:08:02.990 --> 00:08:04.120
+Not just once.
+
+150
+00:08:04.120 --> 00:08:07.510
+Again and again and again and again, okay?
+
+151
+00:08:07.510 --> 00:08:10.570
+So the other question is,
+how do we stop it?
+
+152
+00:08:10.570 --> 00:08:13.090
+Something's happening,
+again and again and again.
+
+153
+00:08:13.090 --> 00:08:14.170
+How do we stop it?
+
+154
+00:08:14.170 --> 00:08:16.250
+Well we would use clear again,
+
+155
+00:08:16.250 --> 00:08:18.980
+clearInterval this time
+because it's interval.
+
+156
+00:08:18.980 --> 00:08:25.010
+And again you clear that variable,
+that variable that you used to start it.
+
+157
+00:08:26.200 --> 00:08:28.630
+Let's do a quick example,
+let's have a look.
+
+158
+00:08:28.630 --> 00:08:32.000
+So here is our example it is
+exactly the same as before,
+
+159
+00:08:32.000 --> 00:08:34.460
+the only difference it looks
+the same as before but
+
+160
+00:08:34.460 --> 00:08:39.120
+the difference is in the coding we
+have now used setinterval to trigger
+
+161
+00:08:39.120 --> 00:08:43.930
+the repeating pattern instead of
+using settimeout every single time.
+
+162
+00:08:44.930 --> 00:08:45.930
+Let's have a look at the code.
+
+163
+00:08:47.000 --> 00:08:52.140
+So basically, we rewrote a previous
+example, so that it used set time out.
+
+164
+00:08:52.140 --> 00:08:58.140
+So, we load the webpage, and let's look
+at the code which is a bit different.
+
+165
+00:08:58.140 --> 00:09:02.220
+When the webpage has loaded,
+we set up an interval.
+
+166
+00:09:02.220 --> 00:09:03.860
+We set up an interval.
+
+167
+00:09:03.860 --> 00:09:09.850
+Every 50 milliseconds we will run the code
+and the code is the same as before.
+
+168
+00:09:09.850 --> 00:09:13.470
+It's responsible for
+changing the x value + 1 and
+
+169
+00:09:13.470 --> 00:09:17.080
+then moving the image by that new x value.
+
+170
+00:09:18.240 --> 00:09:23.270
+Now, because we use setInterval that
+automatically runs that function
+
+171
+00:09:23.270 --> 00:09:25.470
+every 50 milliseconds.
+
+172
+00:09:25.470 --> 00:09:32.500
+So up here in this function that we built,
+I've removed the loop function right here.
+
+173
+00:09:32.500 --> 00:09:37.200
+I said here, before, set timeout so it
+runs it again, set timeout, set timeout,
+
+174
+00:09:37.200 --> 00:09:38.210
+set timeout.
+
+175
+00:09:38.210 --> 00:09:40.140
+We don't need to do that anymore.
+
+176
+00:09:40.140 --> 00:09:42.200
+Because we've set up an interval,
+
+177
+00:09:42.200 --> 00:09:47.830
+it automatically does that repetition
+process every 50 milliseconds.
+
+178
+00:09:47.830 --> 00:09:52.030
+Then the only thing that I changes also
+was the button, kick on the button,
+
+179
+00:09:52.030 --> 00:09:53.320
+what does it do?
+
+180
+00:09:53.320 --> 00:09:56.200
+Clear interval instead of clear time out.
+
+181
+00:09:56.200 --> 00:09:57.500
+Okay, clear interval.
+
+182
+00:09:57.500 --> 00:10:01.060
+All right, apart from that
+it's the same visual result,
+
+183
+00:10:01.060 --> 00:10:05.660
+it's just using interval and
+clear interval instead of set time out.
+
+184
+00:10:05.660 --> 00:10:09.250
+You really have a choice
+of which ones to use.
+
+185
+00:10:09.250 --> 00:10:12.170
+So that's the end of our discussion
+about timers in JavaScript.

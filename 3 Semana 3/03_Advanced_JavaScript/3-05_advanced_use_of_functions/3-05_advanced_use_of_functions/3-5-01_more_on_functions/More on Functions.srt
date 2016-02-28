@@ -1,0 +1,416 @@
+WEBVTT
+
+1
+00:00:00.780 --> 00:00:04.580
+Let's look at some advanced uses
+of functions in JavaScript.
+
+2
+00:00:05.580 --> 00:00:08.294
+So, these are the different
+things we're gonna look at.
+
+3
+00:00:08.294 --> 00:00:11.020
+How to assign a function to a variable.
+
+4
+00:00:12.100 --> 00:00:15.160
+How to pass a function to a function.
+
+5
+00:00:15.160 --> 00:00:18.750
+And also how to return
+a function from a function.
+
+6
+00:00:18.750 --> 00:00:21.190
+Fairly advanced features.
+
+7
+00:00:21.190 --> 00:00:23.780
+And these are the different pieces
+of code we're gonna look at.
+
+8
+00:00:25.970 --> 00:00:30.680
+So what we know so far is,
+this is a typical way to make a function.
+
+9
+00:00:30.680 --> 00:00:32.940
+No problem at all, everything works fine.
+
+10
+00:00:32.940 --> 00:00:36.940
+Function, name of the function,
+have some code inside it.
+
+11
+00:00:36.940 --> 00:00:38.460
+No problem, that's very typical.
+
+12
+00:00:39.540 --> 00:00:42.310
+You could also do one of these.
+
+13
+00:00:42.310 --> 00:00:50.250
+You can actually say, make a function but
+you assign it to a variable name, okay?
+
+14
+00:00:50.250 --> 00:00:54.480
+Make a function as usual,
+assign it to a variable.
+
+15
+00:00:54.480 --> 00:00:57.670
+If you like, you could actually have
+the name of the function as well,
+
+16
+00:00:57.670 --> 00:01:01.280
+but you don't have to, this one hasn't
+even written the name of a function.
+
+17
+00:01:01.280 --> 00:01:03.360
+But you could write the name if you like.
+
+18
+00:01:03.360 --> 00:01:06.650
+That function is assigned
+to this variable and
+
+19
+00:01:06.650 --> 00:01:09.540
+you write all your code as
+usual inside the braces.
+
+20
+00:01:10.990 --> 00:01:13.290
+So, you could do that.
+
+21
+00:01:13.290 --> 00:01:18.970
+We're giving a function to a variable and
+that function is
+
+22
+00:01:18.970 --> 00:01:25.110
+declared when the browser gets
+to this point in the code.
+
+23
+00:01:25.110 --> 00:01:28.560
+It may not get to this point at the start,
+when the webpage is loaded.
+
+24
+00:01:28.560 --> 00:01:32.730
+It may get to this point, like for
+example, it may run a function
+
+25
+00:01:32.730 --> 00:01:38.325
+with this inside it, later, possibly five
+minutes after the webpage each has loaded.
+
+26
+00:01:38.325 --> 00:01:41.205
+That a difference to this one here.
+
+27
+00:01:41.205 --> 00:01:43.958
+This one is created when
+the webpage is loaded.
+
+28
+00:01:43.958 --> 00:01:48.209
+These are ways to make a function
+which are not straight away when
+
+29
+00:01:48.209 --> 00:01:51.135
+the webpage is loaded but
+it could be later.
+
+30
+00:01:51.135 --> 00:01:53.793
+So there is some subtle differences.
+
+31
+00:01:53.793 --> 00:01:55.305
+Okay, what else could we do?
+
+32
+00:01:55.305 --> 00:01:58.335
+We could pass a function to a function.
+
+33
+00:01:58.335 --> 00:02:01.556
+In JavaScript,
+a function is just an object and
+
+34
+00:02:01.556 --> 00:02:03.739
+you can pass that to a function.
+
+35
+00:02:03.739 --> 00:02:04.860
+Let's see an example.
+
+36
+00:02:06.540 --> 00:02:12.980
+So the idea of this is,
+to check a operation.
+
+37
+00:02:12.980 --> 00:02:14.500
+So here's one line of code.
+
+38
+00:02:15.670 --> 00:02:22.343
+Result is myDivide and then we
+are passing a function check, okay?
+
+39
+00:02:22.343 --> 00:02:25.320
+That is passed to the division.
+
+40
+00:02:25.320 --> 00:02:30.030
+It's just an example of passing
+a function here to a function.
+
+41
+00:02:31.120 --> 00:02:35.370
+Now the general idea of this is,
+if you divide a number by 0zero,
+
+42
+00:02:35.370 --> 00:02:36.770
+you'll get an error, okay?
+
+43
+00:02:36.770 --> 00:02:38.710
+You cannot divide a number by 0.
+
+44
+00:02:38.710 --> 00:02:39.990
+Any number.
+
+45
+00:02:39.990 --> 00:02:45.010
+So the simple idea here is,
+we write a function but
+
+46
+00:02:45.010 --> 00:02:47.890
+we also include a checking function.
+
+47
+00:02:47.890 --> 00:02:52.180
+We pass the checking
+function to that function.
+
+48
+00:02:52.180 --> 00:02:58.770
+And then it uses that checking function
+to check if we can do a division.
+
+49
+00:02:58.770 --> 00:03:01.775
+And we can do a division if
+the second number is not 0.
+
+50
+00:03:03.122 --> 00:03:05.890
+All right, so
+that function is actually here, check.
+
+51
+00:03:05.890 --> 00:03:12.170
+All it does is, it simply checks if the
+second number is not 0 then return true.
+
+52
+00:03:12.170 --> 00:03:15.290
+We can do division,
+otherwise return false.
+
+53
+00:03:15.290 --> 00:03:16.630
+So there's a function.
+
+54
+00:03:16.630 --> 00:03:21.580
+We are passing that function,
+check, goes to this function and
+
+55
+00:03:21.580 --> 00:03:23.020
+we've given it a different name, fn.
+
+56
+00:03:23.020 --> 00:03:24.470
+And so
+
+57
+00:03:24.470 --> 00:03:29.450
+now we can use that function, give it two
+numbers which is the same two numbers.
+
+58
+00:03:29.450 --> 00:03:33.430
+Can we do 44 divide by 1,
+let's try that out,
+
+59
+00:03:33.430 --> 00:03:39.310
+44 divide by 1 and that is given to
+the checking function, which returns true.
+
+60
+00:03:39.310 --> 00:03:44.900
+So we get a message, it's okay,
+we can divide 44 by 1 no problem at all.
+
+61
+00:03:46.090 --> 00:03:51.630
+And so we get the answer coming
+back from my division, okay?
+
+62
+00:03:51.630 --> 00:03:54.730
+Otherwise, that checking
+function has said,
+
+63
+00:03:54.730 --> 00:03:59.520
+not okay, we have a problem,
+the second number is 0.
+
+64
+00:03:59.520 --> 00:04:03.200
+Okay, now it's a bit of a kind of
+unusual example, a bit weird, but
+
+65
+00:04:03.200 --> 00:04:08.330
+it's just illustrating a real example
+passing a function to another function and
+
+66
+00:04:08.330 --> 00:04:09.680
+then using that function.
+
+67
+00:04:11.420 --> 00:04:12.340
+All right, what else can we do?
+
+68
+00:04:12.340 --> 00:04:15.200
+We could return a function
+from a function.
+
+69
+00:04:16.700 --> 00:04:19.560
+All right, so
+let's look at an example of that.
+
+70
+00:04:19.560 --> 00:04:26.980
+So here's our main code and we've said
+there's our function called counter.
+
+71
+00:04:26.980 --> 00:04:30.720
+And we could go and we could run that
+function here and it does something and
+
+72
+00:04:30.720 --> 00:04:35.240
+it returns, it doesn't return a number,
+it doesn't return text,
+
+73
+00:04:35.240 --> 00:04:39.570
+a string, it returns a function,
+right there.
+
+74
+00:04:39.570 --> 00:04:46.740
+That function comes back and
+is stored in the variable count, okay?
+
+75
+00:04:46.740 --> 00:04:49.910
+So we ran a function up here,
+what did it do?
+
+76
+00:04:49.910 --> 00:04:53.530
+Nothing very clever, but
+it returned a function in the variable.
+
+77
+00:04:54.770 --> 00:04:58.160
+All right, now we could use
+the name of that variable and
+
+78
+00:04:58.160 --> 00:05:01.830
+we could run that function once,
+twice, three times, and
+
+79
+00:05:01.830 --> 00:05:08.014
+each time we just add a number,
+and it will show a 1, 2, 3, okay?
+
+80
+00:05:09.182 --> 00:05:13.390
+So, that is an example of
+a function being returned
+
+81
+00:05:13.390 --> 00:05:16.770
+from a function and then being used.
+
+82
+00:05:16.770 --> 00:05:18.370
+Let's run this example.
+
+83
+00:05:18.370 --> 00:05:18.900
+There we are.
+
+84
+00:05:18.900 --> 00:05:22.972
+We get 1 and then 2, that's
+the second time we ran the function,
+
+85
+00:05:22.972 --> 00:05:25.558
+which is stored in the variable.
+
+86
+00:05:25.558 --> 00:05:29.010
+And then 3, that's the third time we ran
+the function stored in the variable.
+
+87
+00:05:29.010 --> 00:05:31.220
+And then we finished.
+
+88
+00:05:31.220 --> 00:05:33.700
+That's the end of our quick
+discussion of some advanced
+
+89
+00:05:33.700 --> 00:05:35.675
+things you could do with
+functions in JavaScript.

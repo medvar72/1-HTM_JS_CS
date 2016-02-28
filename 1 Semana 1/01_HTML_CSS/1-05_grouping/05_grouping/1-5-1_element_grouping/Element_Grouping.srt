@@ -1,0 +1,225 @@
+WEBVTT
+
+1
+00:00:01.250 --> 00:00:03.690
+Let's look at element grouping in HTML.
+
+2
+00:00:04.940 --> 00:00:09.630
+So basically, this is just very simple
+presentation talking about how to group
+
+3
+00:00:09.630 --> 00:00:14.360
+elements together into useful groups.
+
+4
+00:00:14.360 --> 00:00:17.240
+Two elements we're gonna look at,
+fieldset and legend.
+
+5
+00:00:18.730 --> 00:00:24.210
+So the idea is nothing too complicated,
+but it's simply to put
+
+6
+00:00:24.210 --> 00:00:30.760
+items that work together in a similar
+structure in the same structure.
+
+7
+00:00:30.760 --> 00:00:32.650
+There's two ways to think about this.
+
+8
+00:00:32.650 --> 00:00:37.510
+One is the visual output on the webpage,
+and then the other is the code.
+
+9
+00:00:37.510 --> 00:00:41.640
+So, the code,
+you might want to group things together.
+
+10
+00:00:41.640 --> 00:00:46.200
+And the way to do that is to use
+fieldset together with legend, and
+
+11
+00:00:46.200 --> 00:00:48.390
+when you look at your code,
+you can realize, oh,
+
+12
+00:00:48.390 --> 00:00:53.270
+yes, I understand, these inputs
+are related to personal information.
+
+13
+00:00:53.270 --> 00:00:55.380
+So it helps you as a programmer.
+
+14
+00:00:55.380 --> 00:00:59.750
+But also, there's a visual result,
+which helps group this together as well.
+
+15
+00:00:59.750 --> 00:01:03.860
+So there's a visual side,
+there's also a kind of programming side,
+
+16
+00:01:03.860 --> 00:01:07.140
+advantages to using fieldset and legend.
+
+17
+00:01:07.140 --> 00:01:09.738
+So, here, I've got my fieldset,
+I've got my legend.
+
+18
+00:01:09.738 --> 00:01:12.580
+Personal information, two inputs.
+
+19
+00:01:12.580 --> 00:01:13.340
+What about here?
+
+20
+00:01:13.340 --> 00:01:17.710
+Another grouping, fieldset,
+legend, Favorite things, okay?
+
+21
+00:01:17.710 --> 00:01:21.640
+So I've got two groups which
+work together, all right?
+
+22
+00:01:21.640 --> 00:01:22.300
+What does it look like?
+
+23
+00:01:22.300 --> 00:01:24.030
+It looks like this.
+
+24
+00:01:24.030 --> 00:01:26.410
+So there's fieldset and
+there's the legend.
+
+25
+00:01:26.410 --> 00:01:31.310
+This is fieldset has resulted
+in the browser adding a box
+
+26
+00:01:31.310 --> 00:01:34.620
+around those things,
+which are put together in the fieldset.
+
+27
+00:01:34.620 --> 00:01:36.570
+Okay, so I had a couple of things.
+
+28
+00:01:36.570 --> 00:01:37.190
+They're put together.
+
+29
+00:01:37.190 --> 00:01:38.370
+There's another couple of things.
+
+30
+00:01:38.370 --> 00:01:39.610
+They're put together.
+
+31
+00:01:39.610 --> 00:01:43.550
+It's a nice visual identity,
+as well as, in the HTML,
+
+32
+00:01:43.550 --> 00:01:48.550
+a nice kind of coding identity as well,
+grouping things together.
+
+33
+00:01:48.550 --> 00:01:49.340
+So that looks good.
+
+34
+00:01:49.340 --> 00:01:51.310
+This example is using a form.
+
+35
+00:01:51.310 --> 00:01:53.180
+But it doesn't have to be a form.
+
+36
+00:01:53.180 --> 00:01:56.750
+So, let's have a look at an example
+which has nothing to do with forms.
+
+37
+00:01:56.750 --> 00:02:00.720
+This is just some kind of text
+output in the web page, right?
+
+38
+00:02:00.720 --> 00:02:02.170
+A couple of things here.
+
+39
+00:02:02.170 --> 00:02:03.890
+A couple of things here.
+
+40
+00:02:03.890 --> 00:02:08.320
+I want it to be shown with a nice box
+around it and a nice title at the top.
+
+41
+00:02:08.320 --> 00:02:09.940
+Nothing to do with forms.
+
+42
+00:02:09.940 --> 00:02:14.810
+Okay, I use the same code, and we get
+a nice little summary, perhaps this is for
+
+43
+00:02:14.810 --> 00:02:17.160
+a game that you're building,
+something like that.
+
+44
+00:02:17.160 --> 00:02:20.360
+Enemies, friends, this doesn't
+have to take up the whole page.
+
+45
+00:02:20.360 --> 00:02:22.770
+It could be over on the left hand side.
+
+46
+00:02:22.770 --> 00:02:24.070
+Or on the right hand side.
+
+47
+00:02:24.070 --> 00:02:26.860
+Maybe the bottom, the top,
+you could put it in a div and
+
+48
+00:02:26.860 --> 00:02:30.960
+put the div at any location,
+as we talked about it another video.
+
+49
+00:02:30.960 --> 00:02:34.890
+So it's a nice visual way
+to group elements together.

@@ -1,0 +1,618 @@
+WEBVTT
+
+1
+00:00:00.710 --> 00:00:02.900
+Okay, let's have some more
+discussion about style.
+
+2
+00:00:04.310 --> 00:00:09.275
+So basically, after this presentation,
+you'll understand inline style, and
+
+3
+00:00:09.275 --> 00:00:11.500
+pseudo-classes, and
+
+4
+00:00:11.500 --> 00:00:15.590
+also a little bit about which rule
+has more priority than other rules.
+
+5
+00:00:17.470 --> 00:00:19.590
+These are the pseudo-classes
+we're gonna look at.
+
+6
+00:00:21.820 --> 00:00:24.400
+So, first thing, inline style.
+
+7
+00:00:24.400 --> 00:00:28.790
+So, inline style is
+when you type the style
+
+8
+00:00:28.790 --> 00:00:33.310
+that you want to apply right there for
+that particular element.
+
+9
+00:00:33.310 --> 00:00:36.480
+So for
+this particular paragraph we want to say
+
+10
+00:00:36.480 --> 00:00:39.440
+all the text will be on
+the right hand side.
+
+11
+00:00:39.440 --> 00:00:41.360
+That's what we're saying right there.
+
+12
+00:00:41.360 --> 00:00:42.620
+So that is inline style.
+
+13
+00:00:42.620 --> 00:00:46.290
+So that's very different to
+what we've talked about before.
+
+14
+00:00:46.290 --> 00:00:49.020
+Before, we talked about putting
+style at the top of a page,
+
+15
+00:00:49.020 --> 00:00:51.110
+and this is really the opposite.
+
+16
+00:00:51.110 --> 00:00:54.110
+This is saying, no, I don't wanna
+put it on the top of the page.
+
+17
+00:00:54.110 --> 00:00:59.960
+I wanna put it right here for one
+particular element right there, all right?
+
+18
+00:00:59.960 --> 00:01:04.920
+So it's harder to manage, because you
+have to go through all the code, and
+
+19
+00:01:04.920 --> 00:01:09.130
+try to work out which
+inline style is being used,
+
+20
+00:01:09.130 --> 00:01:12.910
+if everything is not at
+the top in the style section.
+
+21
+00:01:12.910 --> 00:01:14.310
+So it can be a bit more troublesome.
+
+22
+00:01:15.870 --> 00:01:17.440
+Here's an example.
+
+23
+00:01:17.440 --> 00:01:20.680
+This has a list, unordered list.
+
+24
+00:01:20.680 --> 00:01:24.150
+And we have four list items in the list.
+
+25
+00:01:24.150 --> 00:01:27.040
+And we have a style rule at the top,
+
+26
+00:01:27.040 --> 00:01:31.320
+which says every list item is
+gonna have a yellow background.
+
+27
+00:01:31.320 --> 00:01:32.450
+Okay.
+No problem.
+
+28
+00:01:32.450 --> 00:01:36.440
+Four list items,
+they will all have a yellow background.
+
+29
+00:01:36.440 --> 00:01:39.090
+However, down here, we said, no,
+
+30
+00:01:39.090 --> 00:01:44.330
+I want to apply this inline
+style to the third list item.
+
+31
+00:01:45.460 --> 00:01:50.330
+So, because we've said this,
+this is a higher priority than this.
+
+32
+00:01:50.330 --> 00:01:55.960
+So this one will indeed be in purple and
+all the others will be in yellow.
+
+33
+00:01:55.960 --> 00:01:57.750
+So we get a result like this.
+
+34
+00:01:57.750 --> 00:02:02.200
+Yellow, yellow, yellow, but then we said
+inline style for the third list item, so
+
+35
+00:02:02.200 --> 00:02:02.770
+it's purple.
+
+36
+00:02:04.120 --> 00:02:05.730
+It has a higher priority.
+
+37
+00:02:07.620 --> 00:02:08.250
+All right.
+
+38
+00:02:08.250 --> 00:02:09.580
+Let's talk about another thing.
+
+39
+00:02:09.580 --> 00:02:12.790
+Context control for style rules.
+
+40
+00:02:12.790 --> 00:02:15.590
+You could have a rule
+which looks like this.
+
+41
+00:02:15.590 --> 00:02:20.850
+And it says all right, list items,
+those will be red color.
+
+42
+00:02:20.850 --> 00:02:26.970
+But what it actually says is list items
+which are within an unordered list,
+
+43
+00:02:26.970 --> 00:02:32.730
+those list items, no other list items,
+will be red, all right?
+
+44
+00:02:32.730 --> 00:02:36.670
+So, list item inside unordered list, red.
+
+45
+00:02:36.670 --> 00:02:38.500
+Any other list item will not be red.
+
+46
+00:02:39.510 --> 00:02:41.910
+So here's an example piece of code.
+
+47
+00:02:41.910 --> 00:02:44.610
+We've got a list and another list.
+
+48
+00:02:44.610 --> 00:02:49.450
+This one is an unordered list,
+this one is an ordered list.
+
+49
+00:02:49.450 --> 00:02:51.290
+And then we've said up here, a rule.
+
+50
+00:02:51.290 --> 00:02:54.410
+So we've said list items
+in the unordered list,
+
+51
+00:02:54.410 --> 00:02:57.880
+that's the first list,
+they will be yellow.
+
+52
+00:02:57.880 --> 00:02:59.790
+Now, that will not apply
+to the second list.
+
+53
+00:03:00.810 --> 00:03:01.840
+So here's the result.
+
+54
+00:03:01.840 --> 00:03:05.060
+You can see the style rule has not
+been applied to the second list, but
+
+55
+00:03:05.060 --> 00:03:06.700
+it got applied to the first list.
+
+56
+00:03:08.710 --> 00:03:11.137
+Let's look at another subject,
+pseudo-classes.
+
+57
+00:03:11.137 --> 00:03:16.340
+So, pseudo-classes are basically
+classes with, what I tend to say is,
+
+58
+00:03:16.340 --> 00:03:21.130
+some kind of intelligence,
+some kind of extra capability.
+
+59
+00:03:22.280 --> 00:03:25.450
+So here's the first one, and it is hover.
+
+60
+00:03:25.450 --> 00:03:31.290
+So it's saying when the user
+puts their mouse over heading 1,
+
+61
+00:03:31.290 --> 00:03:32.870
+it will change to red.
+
+62
+00:03:32.870 --> 00:03:37.930
+So, put your mouse over heading 1,
+the color of the text will become red.
+
+63
+00:03:37.930 --> 00:03:42.070
+Move your mouse away from the heading 1,
+it will go back to the previous color.
+
+64
+00:03:43.170 --> 00:03:47.940
+So that's hover, so it's some kind
+of intelligence, if you like.
+
+65
+00:03:47.940 --> 00:03:51.850
+Now, there's a lot of these
+pseudo-classes, many, many, of them.
+
+66
+00:03:51.850 --> 00:03:53.370
+So let's just have
+a look at a few of them.
+
+67
+00:03:55.160 --> 00:04:01.770
+So for example, here, if you have a link,
+then that will be a red color, all right?
+
+68
+00:04:01.770 --> 00:04:05.200
+Now that applies to a, because actually,
+that's what a link is.
+
+69
+00:04:05.200 --> 00:04:06.270
+So it has to be a.
+
+70
+00:04:06.270 --> 00:04:07.200
+Remember a, anchor.
+
+71
+00:04:08.580 --> 00:04:11.770
+So, any link will be red color.
+
+72
+00:04:11.770 --> 00:04:13.070
+What about here?
+
+73
+00:04:13.070 --> 00:04:13.850
+visited.
+
+74
+00:04:13.850 --> 00:04:19.060
+That means that the person who is using
+the browser, if they have visited
+
+75
+00:04:19.060 --> 00:04:24.270
+a link and the link is shown on
+the webpage, then you can fix up a color.
+
+76
+00:04:25.680 --> 00:04:29.560
+So again, that has to be for
+a, because a is for links.
+
+77
+00:04:30.710 --> 00:04:33.980
+So anything that you have visited
+will be shown in red color.
+
+78
+00:04:36.850 --> 00:04:37.580
+active.
+
+79
+00:04:37.580 --> 00:04:44.040
+So, active means you
+are currently following the link.
+
+80
+00:04:44.040 --> 00:04:45.830
+You're currently following the link.
+
+81
+00:04:45.830 --> 00:04:49.540
+Now that could be just
+like 0.1 of a second.
+
+82
+00:04:49.540 --> 00:04:51.540
+You've clicked on a link, and
+
+83
+00:04:51.540 --> 00:04:56.020
+the browser is just going and
+grabbing the next webpage and
+
+84
+00:04:56.020 --> 00:05:00.540
+building it, and then it displays
+the link, it could be very, very quick.
+
+85
+00:05:00.540 --> 00:05:06.060
+Even though it's very quick, there is
+a pseudo-class for handling that, you're
+
+86
+00:05:06.060 --> 00:05:11.485
+currently following and grabbing the next
+webpage, because you clicked on a link.
+
+87
+00:05:11.485 --> 00:05:13.750
+All right, it will apply this style.
+
+88
+00:05:13.750 --> 00:05:18.050
+And again, that has to be for
+a, cuz it's all about links.
+
+89
+00:05:18.050 --> 00:05:18.690
+What about this one?
+
+90
+00:05:18.690 --> 00:05:20.735
+Well, this one doesn't have to be for a.
+
+91
+00:05:20.735 --> 00:05:22.650
+This is pretty straightforward.
+
+92
+00:05:22.650 --> 00:05:25.270
+This is any element which is empty.
+
+93
+00:05:25.270 --> 00:05:26.730
+It has nothing inside it.
+
+94
+00:05:26.730 --> 00:05:29.450
+All right, it could be every
+paragraph which is empty.
+
+95
+00:05:29.450 --> 00:05:31.180
+It will use this style rule.
+
+96
+00:05:32.200 --> 00:05:36.240
+So this is just five of them, but
+there's actually another, 20, 30, 40,
+
+97
+00:05:36.240 --> 00:05:39.270
+a lot more pseudo-classes.
+
+98
+00:05:39.270 --> 00:05:41.640
+So here's an example.
+
+99
+00:05:41.640 --> 00:05:46.900
+And we've set up these rules that we
+just looked at, the pseudo-classes,
+
+100
+00:05:46.900 --> 00:05:50.930
+and we built a simple
+webpage to explore them.
+
+101
+00:05:50.930 --> 00:05:55.505
+And then it looks like this, and so
+we can try some of these out, but
+
+102
+00:05:55.505 --> 00:05:59.085
+some of them, remember,
+are quite hard to see.
+
+103
+00:05:59.085 --> 00:06:01.445
+So let's go for the hardest one first.
+
+104
+00:06:01.445 --> 00:06:04.335
+Remember, the hardest
+one is the active link.
+
+105
+00:06:04.335 --> 00:06:08.380
+Okay, that is the link that
+is currently being processed.
+
+106
+00:06:08.380 --> 00:06:09.710
+It may be hard to see.
+
+107
+00:06:09.710 --> 00:06:10.220
+Purple.
+
+108
+00:06:10.220 --> 00:06:13.430
+So, active link, it will become purple.
+
+109
+00:06:13.430 --> 00:06:19.140
+So let's try to open the example, and
+then we'll play with it and try these out.
+
+110
+00:06:19.140 --> 00:06:22.070
+Active link will become purple
+is the first one we'll try.
+
+111
+00:06:27.611 --> 00:06:30.430
+So here's the example,
+let's try that first one.
+
+112
+00:06:30.430 --> 00:06:34.660
+Active link should become purple, but you
+may have to be very quick with your eyes,
+
+113
+00:06:34.660 --> 00:06:35.640
+but let's try it.
+
+114
+00:06:35.640 --> 00:06:39.120
+There's four links here and a list,
+
+115
+00:06:39.120 --> 00:06:42.940
+a series of lists here,
+one single list with lots of list items.
+
+116
+00:06:42.940 --> 00:06:44.320
+So let's try the active link.
+
+117
+00:06:48.020 --> 00:06:52.150
+So I'm gonna click on this one, and yes,
+
+118
+00:06:52.150 --> 00:06:57.330
+it managed to show that in
+the correct style very quickly.
+
+119
+00:06:59.300 --> 00:07:01.290
+Okay, so that was active link.
+
+120
+00:07:01.290 --> 00:07:03.750
+What else did we have?
+
+121
+00:07:03.750 --> 00:07:07.210
+We had a link which has not yet
+been activated.
+
+122
+00:07:07.210 --> 00:07:10.920
+You can see there's some yellow
+color being applied behind it.
+
+123
+00:07:10.920 --> 00:07:13.250
+And what about if we
+have visited the link?
+
+124
+00:07:13.250 --> 00:07:17.950
+Well, now we have visited the link, so
+it's using that style rule as well.
+
+125
+00:07:17.950 --> 00:07:21.262
+Down here we have empty
+style rule being used.
+
+126
+00:07:21.262 --> 00:07:26.270
+All right, so this particular
+list item had nothing inside it,
+
+127
+00:07:26.270 --> 00:07:29.130
+so that triggered the use
+of that particular style.
+
+128
+00:07:30.490 --> 00:07:34.510
+And then the other thing we used
+was hover, so let's show hover.
+
+129
+00:07:37.760 --> 00:07:43.520
+So you can see if I put my mouse over
+these, they change the background color.
+
+130
+00:07:45.860 --> 00:07:50.800
+Okay, a little bit hard to demonstrate
+some pseudo-classes because they
+
+131
+00:07:50.800 --> 00:07:53.180
+have some kind of intelligence,
+if you like.
+
+132
+00:07:53.180 --> 00:07:57.240
+But yes, you can see mouseover has
+triggered the different style.
+
+133
+00:07:57.240 --> 00:08:01.479
+So that's our brief introduction to
+three different areas of styles,
+
+134
+00:08:01.479 --> 00:08:04.457
+including this one,
+which is pseudo-classes.

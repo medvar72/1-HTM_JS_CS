@@ -1,0 +1,751 @@
+WEBVTT
+
+1
+00:00:01.540 --> 00:00:03.660
+So now let's begin to explore HTML.
+
+2
+00:00:05.060 --> 00:00:09.140
+So after this presentation you'll be
+able to build a simple web page and
+
+3
+00:00:09.140 --> 00:00:12.300
+also you'll appreciate
+the use of an HTML editor.
+
+4
+00:00:14.060 --> 00:00:16.100
+Here's some of the HTML
+elements we're gonna look at.
+
+5
+00:00:18.100 --> 00:00:23.140
+So, first thing is, HTML is defined by
+
+6
+00:00:23.140 --> 00:00:27.290
+a particular group of people called
+the World Wide Web Consortium.
+
+7
+00:00:28.370 --> 00:00:31.950
+So there is a particular place on
+the internet where you can go.
+
+8
+00:00:31.950 --> 00:00:35.990
+And you can see all
+the information about HTML.
+
+9
+00:00:35.990 --> 00:00:38.880
+And I strongly recommend you
+don't go there, all right,
+
+10
+00:00:38.880 --> 00:00:40.518
+unless you're kind of an expert.
+
+11
+00:00:40.518 --> 00:00:44.080
+You're really already
+quite proficient in HTML.
+
+12
+00:00:44.080 --> 00:00:48.850
+All of that detail there, because there's
+a lot of detail, is really too much.
+
+13
+00:00:48.850 --> 00:00:53.960
+It's not about learning,
+it's about referring to the HTML standard.
+
+14
+00:00:53.960 --> 00:00:58.500
+So this might be useful later after
+you build your HTML skills, but
+
+15
+00:00:58.500 --> 00:01:00.280
+right now I would suggest, don't go there.
+
+16
+00:01:01.930 --> 00:01:03.980
+So lets look at HTML.
+
+17
+00:01:03.980 --> 00:01:06.940
+HTML commands are called elements.
+
+18
+00:01:06.940 --> 00:01:11.330
+Each element has a start tag and
+an end tag.
+
+19
+00:01:11.330 --> 00:01:13.790
+So this is the paragraph element.
+
+20
+00:01:13.790 --> 00:01:15.480
+There's the start of the paragraph.
+
+21
+00:01:15.480 --> 00:01:17.200
+There's the end of the paragraph.
+
+22
+00:01:17.200 --> 00:01:20.000
+And there's some text which I
+haven't shown in the middle of
+
+23
+00:01:20.000 --> 00:01:21.710
+the paragraph, okay?
+
+24
+00:01:21.710 --> 00:01:25.730
+That's the usual structure, start,
+end, something in the middle.
+
+25
+00:01:25.730 --> 00:01:28.436
+However, there are some exceptions
+which we'll look at later.
+
+26
+00:01:30.886 --> 00:01:33.590
+So, let's begin to make a webpage.
+
+27
+00:01:33.590 --> 00:01:35.890
+This is the basic structure of a webpage.
+
+28
+00:01:37.000 --> 00:01:42.810
+You have to have DOCTYPE html at the top,
+then you start your html element.
+
+29
+00:01:42.810 --> 00:01:45.730
+And down the bottom you
+finish your html element.
+
+30
+00:01:45.730 --> 00:01:50.300
+And then you have a head section,
+and then you have a body section.
+
+31
+00:01:50.300 --> 00:01:53.490
+Okay, so this head section is basically
+
+32
+00:01:53.490 --> 00:01:57.140
+some kinds of information which
+you don't see on the web page.
+
+33
+00:01:57.140 --> 00:02:00.690
+The body section is more things that
+you actually see on the web page.
+
+34
+00:02:02.820 --> 00:02:04.340
+So, our first web page.
+
+35
+00:02:04.340 --> 00:02:07.060
+There's the complete source code.
+
+36
+00:02:07.060 --> 00:02:09.640
+We've done the things that we
+saw on the last slide, and
+
+37
+00:02:09.640 --> 00:02:11.460
+we've added a few extra things.
+
+38
+00:02:11.460 --> 00:02:13.840
+A couple of extra things
+in the head section.
+
+39
+00:02:13.840 --> 00:02:16.160
+A couple of extra things in
+the body section as well.
+
+40
+00:02:17.560 --> 00:02:18.990
+This is what it looks like.
+
+41
+00:02:18.990 --> 00:02:19.950
+My web page.
+
+42
+00:02:19.950 --> 00:02:20.627
+Web page is awesome.
+
+43
+00:02:20.627 --> 00:02:21.438
+Very simple.
+
+44
+00:02:21.438 --> 00:02:23.251
+That is the <h1>.
+
+45
+00:02:23.251 --> 00:02:26.080
+That is the P that we saw, paragraph.
+
+46
+00:02:27.580 --> 00:02:32.550
+So we saw <h1>, the top thing and
+we saw P, the paragraph.
+
+47
+00:02:32.550 --> 00:02:35.180
+So <h1> is heading 1.
+
+48
+00:02:35.180 --> 00:02:38.870
+Again, start tag, end tags,
+some text in the middle.
+
+49
+00:02:38.870 --> 00:02:41.750
+Basic structure of most HTML elements.
+
+50
+00:02:41.750 --> 00:02:44.400
+And also paragraph,
+start paragraph, end paragraph, and
+
+51
+00:02:44.400 --> 00:02:46.240
+then some text in the middle.
+
+52
+00:02:46.240 --> 00:02:49.150
+Basic commands that you'll
+see on many web pages.
+
+53
+00:02:50.490 --> 00:02:55.230
+Now, let's look, for a few slides,
+let's look at the head part.
+
+54
+00:02:55.230 --> 00:02:59.250
+The stuff that we just talked about,
+<h1>, and paragraph, was in the body part.
+
+55
+00:02:59.250 --> 00:03:00.940
+What about the head part?
+
+56
+00:03:00.940 --> 00:03:06.515
+So, basically, anything in the head
+part is information about the webpage.
+
+57
+00:03:06.515 --> 00:03:09.425
+Usually you don't actually see
+those things in the webpage.
+
+58
+00:03:10.515 --> 00:03:15.445
+So I had two things in my simple
+demonstration webpage and
+
+59
+00:03:15.445 --> 00:03:18.245
+one was title and meta tag.
+
+60
+00:03:18.245 --> 00:03:23.680
+Obvious what they do.Title tells the
+browser what the title is of the webpage.
+
+61
+00:03:23.680 --> 00:03:27.220
+And the meta tag, obviously,
+tells the browser the author.
+
+62
+00:03:27.220 --> 00:03:32.580
+So, pretty simple, high level information
+about the web page goes in the head part.
+
+63
+00:03:34.250 --> 00:03:36.270
+Other things you might
+find in the head part.
+
+64
+00:03:36.270 --> 00:03:38.890
+You might see style instruction.
+
+65
+00:03:38.890 --> 00:03:41.210
+We'll talk about style a bit later.
+
+66
+00:03:41.210 --> 00:03:44.320
+You might see a link to a style sheet,
+
+67
+00:03:44.320 --> 00:03:47.450
+which is a separate file
+containing style information.
+
+68
+00:03:48.490 --> 00:03:51.610
+You might see other types
+of meta information.
+
+69
+00:03:51.610 --> 00:03:55.720
+Maybe description, key words,
+maybe character set.
+
+70
+00:03:55.720 --> 00:04:00.910
+Lots of different type of meta information
+you might see in a web page head section.
+
+71
+00:04:02.280 --> 00:04:05.190
+Other things you might see,
+a piece of JavaScript code.
+
+72
+00:04:05.190 --> 00:04:06.800
+That might be in the head.
+
+73
+00:04:06.800 --> 00:04:10.590
+A link to a file which
+has JavaScript code.
+
+74
+00:04:10.590 --> 00:04:12.630
+JavaScript, we talk about that later.
+
+75
+00:04:12.630 --> 00:04:13.340
+Okay.
+
+76
+00:04:13.340 --> 00:04:15.720
+You might see a base instruction and
+
+77
+00:04:15.720 --> 00:04:20.160
+that's basically saying you have
+a website, a whole group of web pages.
+
+78
+00:04:20.160 --> 00:04:21.030
+Where are they going?
+
+79
+00:04:21.030 --> 00:04:22.190
+Where do they belong?
+
+80
+00:04:22.190 --> 00:04:24.020
+And it tells the browser
+where they belong.
+
+81
+00:04:25.200 --> 00:04:27.900
+So, quite a lot of things that you
+might see in the head section.
+
+82
+00:04:29.060 --> 00:04:31.750
+So, we've got lots of elements in HTML.
+
+83
+00:04:31.750 --> 00:04:35.990
+And some of them have attributes,
+parameters, if you like.
+
+84
+00:04:35.990 --> 00:04:40.825
+So there's one attribute,
+another attribute for the meta element.
+
+85
+00:04:40.825 --> 00:04:44.305
+So you can use speech marks,
+double speech marks if you like.
+
+86
+00:04:44.305 --> 00:04:46.215
+And there's double speech marks.
+
+87
+00:04:46.215 --> 00:04:49.985
+But also, if you want,
+you can use single speech marks.
+
+88
+00:04:49.985 --> 00:04:50.965
+Both of them are fine.
+
+89
+00:04:50.965 --> 00:04:53.205
+The browser doesn't
+care which one you use.
+
+90
+00:04:54.395 --> 00:04:58.010
+So, let's begin to learn HTML a bit more.
+
+91
+00:04:58.010 --> 00:04:59.680
+Different ways of learning.
+
+92
+00:04:59.680 --> 00:05:03.700
+One way is to look at the source
+code of any web page.
+
+93
+00:05:03.700 --> 00:05:07.078
+So here's an example, Wikipedia web page.
+
+94
+00:05:07.078 --> 00:05:09.760
+A website which has lots
+of general information,
+
+95
+00:05:09.760 --> 00:05:14.260
+encyclopedia information about
+millions of things around the world.
+
+96
+00:05:14.260 --> 00:05:21.430
+Go to that in your web browser and hit the
+keyboard shortcut such as CTRL+U on a PC.
+
+97
+00:05:21.430 --> 00:05:23.840
+Or some other shortcuts on a Mac.
+
+98
+00:05:23.840 --> 00:05:25.870
+And you will see the source code.
+
+99
+00:05:25.870 --> 00:05:28.348
+And perhaps we'll have a quick
+look at that right now.
+
+100
+00:05:34.290 --> 00:05:37.855
+So for example,
+this is the website for Wikipedia.
+
+101
+00:05:37.855 --> 00:05:40.205
+I'd like to learn the HTML
+from this website.
+
+102
+00:05:40.205 --> 00:05:44.975
+So I'm going to go over to my computer and
+do CTRL+U because this is a PC and
+
+103
+00:05:44.975 --> 00:05:47.055
+just have a quick look at the HTML code.
+
+104
+00:05:49.715 --> 00:05:50.465
+All right.
+
+105
+00:05:50.465 --> 00:05:54.440
+This is the source code for
+the Wikipedia website.
+
+106
+00:05:54.440 --> 00:05:56.290
+I can see things I already know about.
+
+107
+00:05:56.290 --> 00:06:03.420
+DOCTYPE html, start html, the head
+section begins, meta tags, titles.
+
+108
+00:06:03.420 --> 00:06:07.410
+All of these things,
+a lot of them I know already.
+
+109
+00:06:07.410 --> 00:06:10.080
+Even though, I just began to look at html.
+
+110
+00:06:10.080 --> 00:06:11.780
+But some things I don't know.
+
+111
+00:06:11.780 --> 00:06:14.330
+We can't cover everything
+in this series of videos.
+
+112
+00:06:14.330 --> 00:06:18.290
+For example,
+html it can have a language attribute.
+
+113
+00:06:18.290 --> 00:06:21.880
+This particular webpage
+is in English language.
+
+114
+00:06:21.880 --> 00:06:26.140
+Okay, we don't have time to look
+at all of these attributes.
+
+115
+00:06:26.140 --> 00:06:28.210
+You can learn them by
+looking at websites and
+
+116
+00:06:28.210 --> 00:06:31.140
+looking at the source code
+of different websites.
+
+117
+00:06:31.140 --> 00:06:35.150
+So here's a header section, if I keep
+going down I'll see the body section.
+
+118
+00:06:35.150 --> 00:06:38.450
+I can learn a lot of things by
+looking at this kinda website.
+
+119
+00:06:38.450 --> 00:06:43.040
+Okay, another way to learn HTML is
+to look at different HTML editors.
+
+120
+00:06:43.040 --> 00:06:45.550
+All right, there's hundreds of editors.
+
+121
+00:06:45.550 --> 00:06:49.330
+Many, many to a quick google search and
+you'll find a big, long list.
+
+122
+00:06:49.330 --> 00:06:54.480
+So they give you a nice, GUI environment,
+a nice graphical user interface.
+
+123
+00:06:54.480 --> 00:07:00.650
+So that you can build HTML and you can
+also see the source code that they create.
+
+124
+00:07:00.650 --> 00:07:01.490
+So these editors,
+
+125
+00:07:01.490 --> 00:07:06.450
+they're useful sometimes, especially
+useful for complementing learning.
+
+126
+00:07:06.450 --> 00:07:10.980
+That's not replacing learning, but
+complementing your learning of HTML.
+
+127
+00:07:12.010 --> 00:07:12.990
+Let's look at an example.
+
+128
+00:07:14.390 --> 00:07:17.910
+So here's an HTML editor,
+this one is called TinyMCE.
+
+129
+00:07:17.910 --> 00:07:24.780
+And it actually works inside a webpage,
+because this is actually a webpage.
+
+130
+00:07:24.780 --> 00:07:27.140
+And so let's do a quick example.
+
+131
+00:07:27.140 --> 00:07:30.830
+I'm gonna type some text here
+in my little GUI environment.
+
+132
+00:07:30.830 --> 00:07:32.980
+And then I'm gonna apply some formatting.
+
+133
+00:07:32.980 --> 00:07:35.450
+I'm gonna apply the <h1> format.
+
+134
+00:07:35.450 --> 00:07:36.600
+All right.
+
+135
+00:07:36.600 --> 00:07:39.430
+So, I'm gonna type some text,
+it's going to be very small.
+
+136
+00:07:39.430 --> 00:07:41.160
+You won't see it very clearly.
+
+137
+00:07:41.160 --> 00:07:44.080
+And I'm gonna add the <h1> style.
+
+138
+00:07:44.080 --> 00:07:46.930
+And then you'll see it and it a little bit
+bigger and we can see the source code.
+
+139
+00:07:49.230 --> 00:07:51.080
+So, let's do some typing.
+
+140
+00:07:51.080 --> 00:07:58.580
+This is my webpage, something like that,
+extremely small you can't really see it.
+
+141
+00:07:58.580 --> 00:08:02.130
+Let's select it and then apply a format.
+
+142
+00:08:02.130 --> 00:08:05.620
+And we're talking about the <h1> format.
+
+143
+00:08:05.620 --> 00:08:10.190
+And yes,
+now we can see that we have a large
+
+144
+00:08:10.190 --> 00:08:14.400
+size of text that is
+using the head <h1> tag.
+
+145
+00:08:14.400 --> 00:08:15.650
+Now what about my source code?
+
+146
+00:08:15.650 --> 00:08:18.940
+I wanna look at the code
+created by the editor.
+
+147
+00:08:18.940 --> 00:08:21.920
+So I can copy it,
+paste it into my own system.
+
+148
+00:08:21.920 --> 00:08:23.310
+So let's have a look at the source code.
+
+149
+00:08:23.310 --> 00:08:27.000
+And I can access that with
+this particular menu.
+
+150
+00:08:27.000 --> 00:08:30.750
+So let's click and
+look at the source code.
+
+151
+00:08:30.750 --> 00:08:33.080
+And make it a bit larger so
+you can see it.
+
+152
+00:08:34.470 --> 00:08:35.730
+And there is my source code.
+
+153
+00:08:35.730 --> 00:08:38.465
+Fantastic, I didn't
+have to type it myself.
+
+154
+00:08:38.465 --> 00:08:40.670
+<h1>This is my web page.</h1>.
+
+155
+00:08:40.670 --> 00:08:43.050
+And I could copy that,
+
+156
+00:08:43.050 --> 00:08:47.550
+put it in my own web page,
+put it in my own web system if I like.
+
+157
+00:08:47.550 --> 00:08:49.490
+Of course it's not just the simple things.
+
+158
+00:08:49.490 --> 00:08:50.500
+Like, <h1>.
+
+159
+00:08:50.500 --> 00:08:53.530
+There's a hundred different things
+you could do with editors and
+
+160
+00:08:53.530 --> 00:08:57.220
+they'll construct the source code and
+then you copy it and paste it.
+
+161
+00:08:57.220 --> 00:08:58.800
+Does it replace learning?
+
+162
+00:08:58.800 --> 00:09:00.930
+No, it doesn't really replace learning.
+
+163
+00:09:00.930 --> 00:09:04.900
+You still have to understand
+everything it generates, okay?
+
+164
+00:09:04.900 --> 00:09:08.310
+So that's the end of our
+first discussion about HTML.
